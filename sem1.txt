@@ -1,0 +1,15 @@
+# Seminarie 1 - Hårdvara
+
+## *Rita ett blockschema för hårdvaran samt rita ett förslag till kopplingsschema. Hur ska kretsarna kopplas 
+## ihop och hur ska de kopplas till mikrokontrollern? (Exakta pinnar behöver inte anges men du ska kunna
+## specificera vilka periferienheter som vi ska använda.
+
+## Hur hanterar vi matningsspänning till kretsarna och hur mycket ström drar olika delar i kopplingen?
+
+## Kan vi mata från Nucleo-kortet 3V, 5V eller måste vi ha separat matning?
+
+## Vilka matningsspänningar behövs till olika kretsar?
+
+## Analysera om det finns finns några problem med spänningsnivåer för logiska signalern i kretsarna
+
+## Kan vi driva lysdioderna i displayens bakgrundsbelysning direkt från Nucleo-kortet?
