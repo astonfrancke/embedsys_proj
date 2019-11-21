@@ -4,12 +4,30 @@
 ## ihop och hur ska de kopplas till mikrokontrollern? (Exakta pinnar behöver inte anges men du ska kunna
 ## specificera vilka periferienheter som vi ska använda.
 
+Det finns: 
+3 I2C
+3 SPI
+3 USART
+2 UART + 1 LOW POWER UART
+
+HTS221 - SPI I2C, 	Supply voltage: 1.7 - 3.6 V,  			Ström: 1Hz, 25C, 2.5 V = 2microAmpere
+LIS3DSH - SPI I2C, 	Supply voltage: 1.71 - 3.6 V, (typical 2.5)	Ström: 1.6 kHz ODR typical: 225  /  3.125 Hz ODR typical: 11
+VL53L0X - I2C, 		Supply voltage: 2.6 - 3.5 V, (typical: 2.8)	Ström (Average Active): 19mA HW STANDBY: 5 microAMPE
+
+EA-DOGS - SPI, I2C	Supply voltage: 3.3 V				Ström: 440microAMP LED white backlight as of 3-45mA
+HC-06 - UART,		Supply voltage: 3.1V~4.2V			Ström: 30-40 milliAMP
+
+USB? - USART,		Supply voltage: 3.3 V
+
 ## Hur hanterar vi matningsspänning till kretsarna och hur mycket ström drar olika delar i kopplingen?
 
+
 ## Kan vi mata från Nucleo-kortet 3V, 5V eller måste vi ha separat matning?
+- Ja, behövs ingen spearat matning
 
 ## Vilka matningsspänningar behövs till olika kretsar?
 
 ## Analysera om det finns finns några problem med spänningsnivåer för logiska signalern i kretsarna
 
 ## Kan vi driva lysdioderna i displayens bakgrundsbelysning direkt från Nucleo-kortet?
+3-45 mAMP
