@@ -40,3 +40,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\elfra\D
 
 !ENTRY org.eclipse.cdt.core 1 0 2019-11-21 11:23:52.109
 !MESSAGE Indexed 'Sensorkort' (38 sources, 116 headers) in 4,42 sec: 10 525 declarations; 63 807 references; 2 unresolved inclusions; 29 syntax errors; 145 unresolved names (0,19 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-11-21 11:29:16.977
+!MESSAGE Indexed 'Sensorkort' (38 sources, 116 headers) in 2,7 sec: 10 525 declarations; 63 807 references; 2 unresolved inclusions; 29 syntax errors; 145 unresolved names (0,19 %)
