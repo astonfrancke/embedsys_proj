@@ -1,0 +1,49 @@
+/**
+  ******************************************************************************
+  * @file           : usb_com_test.c
+  * @brief          : usb_com_test.c file.
+  *                   This file tests the functions of the usb_com.c file.
+  * @author			: Carl Aston Francke
+  * @version		: 1.0
+  * @date			: 27-November-2019
+  ******************************************************************************
+  */
+
+#include <usb_com_testold.h>
+
+/**
+ * *****************************************************************************
+ * @brief 	Runs the USB test functions.
+ * @return 	void
+ * *****************************************************************************
+ */
+void usb_test_program(void)
+{
+	test_usb_transmit();
+	test_usb_receive();
+}
+
+
+/**
+ * *****************************************************************************
+ * @brief 	Tests usb_transmit function in usb_com.c.
+ * @return 	void
+ * *****************************************************************************
+ */
+void usb_transmit(void)
+{
+	static uint8_t buffer[] = "This is a test string!";
+	usb_transmit(buffer);
+}
+
+/**
+ * *****************************************************************************
+ * @brief 	Tests usb_receive function in usb_com.c.
+ * @return 	void
+ * *****************************************************************************
+ */
+void usb_receive(void)
+{
+	static uint8_t buffer[] = "This is a test string!";
+	usb_transmit(buffer);
+}

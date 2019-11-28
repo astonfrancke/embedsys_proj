@@ -1,0 +1,15 @@
+/*
+ * lcd.h
+ *
+ *  Created on: Nov 27, 2019
+ *      Author: elfra
+ */
+
+#ifndef INC_DISPLAY_H_
+#define INC_DISPLAY_H_
+
+
+
+#endif /* INC_DISPLAY_H_ */
+
+void display_backlight(uint8_t color);

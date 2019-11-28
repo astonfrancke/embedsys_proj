@@ -74,6 +74,8 @@ void Error_Handler(void);
 #define VL53L0X_XSHUT_GPIO_Port GPIOB
 #define Acc_Sel_Pin GPIO_PIN_11
 #define Acc_Sel_GPIO_Port GPIOB
+#define SPI2_ChipSel_Pin GPIO_PIN_12
+#define SPI2_ChipSel_GPIO_Port GPIOB
 #define Disp_Red_Pin GPIO_PIN_7
 #define Disp_Red_GPIO_Port GPIOC
 #define Acc_Int1_Pin GPIO_PIN_8

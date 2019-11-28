@@ -39,6 +39,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define RUN_TEST_PROGRAM
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -60,7 +61,9 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+#ifdef RUN_TEST_PROGRAM
+extern void initialise_monitor_handles(void);
+#endif
 /* USER CODE END 0 */
 
 /**
@@ -99,7 +102,11 @@ int main(void)
   MX_UART4_Init();
   MX_UART5_Init();
   /* USER CODE BEGIN 2 */
+#ifdef RUN_TEST_PROGRAM
+  usb_test_program();
+#else
 
+#endif
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -109,7 +116,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
   }
+
   /* USER CODE END 3 */
 }
 
