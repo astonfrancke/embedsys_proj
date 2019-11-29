@@ -103,7 +103,7 @@ int main(void)
   MX_UART5_Init();
   /* USER CODE BEGIN 2 */
 #ifdef RUN_TEST_PROGRAM
-  usb_test_program();
+  rtc_test_program();
 #else
 
 #endif
@@ -116,7 +116,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
   }
 
   /* USER CODE END 3 */

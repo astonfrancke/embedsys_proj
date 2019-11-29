@@ -26,7 +26,7 @@ void usb_transmit(uint8_t *string, uint16_t data_size){
 
 /**
  * *****************************************************************************
- * @brief 	Receives data via USART(USB), Timeout set to 10000 ms
+ * @brief 	Receives data via USART(USB) maximum 10 bytes, Timeout set to 10000 ms
  * @return 	char *, The string that was received.
  * *****************************************************************************
  */

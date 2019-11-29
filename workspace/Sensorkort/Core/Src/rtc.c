@@ -21,7 +21,6 @@
 #include "rtc.h"
 
 /* USER CODE BEGIN 0 */
-
 /* USER CODE END 0 */
 
 RTC_HandleTypeDef hrtc;
@@ -29,6 +28,8 @@ RTC_HandleTypeDef hrtc;
 /* RTC init function */
 void MX_RTC_Init(void)
 {
+  RTC_TimeTypeDef sTime = {0};
+  RTC_DateTypeDef sDate = {0};
 
   /** Initialize RTC Only 
   */
@@ -41,6 +42,31 @@ void MX_RTC_Init(void)
   hrtc.Init.OutPutPolarity = RTC_OUTPUT_POLARITY_HIGH;
   hrtc.Init.OutPutType = RTC_OUTPUT_TYPE_OPENDRAIN;
   if (HAL_RTC_Init(&hrtc) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /* USER CODE BEGIN Check_RTC_BKUP */
+
+  /* USER CODE END Check_RTC_BKUP */
+
+  /** Initialize RTC and set the Time and Date 
+  */
+  sTime.Hours = 0;
+  sTime.Minutes = 0;
+  sTime.Seconds = 0;
+  sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+  sTime.StoreOperation = RTC_STOREOPERATION_RESET;
+  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sDate.WeekDay = RTC_WEEKDAY_MONDAY;
+  sDate.Month = RTC_MONTH_JANUARY;
+  sDate.Date = 1;
+  sDate.Year = 0;
+
+  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
   {
     Error_Handler();
   }
@@ -106,6 +132,66 @@ void HAL_RTC_MspDeInit(RTC_HandleTypeDef* rtcHandle)
 
 /* USER CODE BEGIN 1 */
 
+/**
+ * *****************************************************************************
+ * @brief 	Set the time of the RTC clock calendar.
+ * @param	uint8_t * date_time, an array of date and time values.
+ * @return 	void
+ * *****************************************************************************
+ */
+void set_time(uint8_t * date_time){
+	/** Initialize RTC and set the Time and Date
+	 */
+	RTC_TimeTypeDef sTime;
+	RTC_DateTypeDef sDate;
+
+	sDate.Year = date_time[0];
+	sDate.Month = date_time[1];
+	sDate.WeekDay = date_time[2];
+	sDate.Date = date_time[3];
+
+	if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
+	{
+		Error_Handler();
+	}
+
+	sTime.Hours = date_time[4];
+	sTime.Minutes = date_time[5];
+	sTime.Seconds = date_time[6];
+	sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+	sTime.StoreOperation = RTC_STOREOPERATION_RESET;
+	if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	/** Enable Calibration
+	 */
+	if (HAL_RTCEx_SetCalibrationOutPut(&hrtc, RTC_CALIBOUTPUT_1HZ) != HAL_OK)
+	{
+		Error_Handler();
+	}
+}
+
+/**
+ * *****************************************************************************
+ * @brief 	Get the time of the RTC clock calendar.
+ * @return 	char *, a string with the RTC calendar time in HH:MM:SS format.
+ * *****************************************************************************
+ */
+char * get_time(){
+
+	static char time[10];
+
+	RTC_TimeTypeDef gTime;
+	RTC_DateTypeDef gDate;
+
+	HAL_RTC_GetTime(&hrtc, &gTime, FORMAT_BIN);
+	HAL_RTC_GetDate(&hrtc, &gDate, FORMAT_BIN);
+
+	sprintf((char*)time, "%02d:%02d:%02d", gTime.Hours, gTime.Minutes, gTime.Seconds);
+
+	return time;
+}
 /* USER CODE END 1 */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
