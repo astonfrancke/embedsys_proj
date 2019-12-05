@@ -20,8 +20,10 @@
 #include "stdint.h"
 #include "main.h"
 #include "spi.h"
+#include "tim.h"
+#include "adc.h"
 
-#define NUM_OF_COLORS 3
+#define NUM_OF_COLORS 2
 #define TRANSMIT_BUFFERSIZE 3
 #define LCD_HOME_L1	0x80
 #define LINE1	0
@@ -30,6 +32,7 @@
 #define	LINE4 	LINE1+0x60
 
 void display_backlight(uint8_t color);
+void set_display_backlight_brightness();
 void lcd_init();
 void lcd_write_string(char * string);
 void lcd_write_char(char character);

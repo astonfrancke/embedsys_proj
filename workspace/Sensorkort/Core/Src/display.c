@@ -16,22 +16,33 @@
  * *****************************************************************************
  * @brief 	Turn on the backlight in a specific color.
  * @param 	uint8_t color, color of the light turned on.
- * 			1 = RED, 2 = GREEN, 3 = WHITE
+ * 			0 = RED, 1 = GREEN, 2 = WHITE
  * @return 	void
  * *****************************************************************************
  */
 void display_backlight(uint8_t color){
 
-	uint32_t color_pins[] = {Disp_Red_Pin, Disp_Green_Pin, Disp_White_Pin};
+	uint32_t color_pins[] = {Disp_Green_Pin, Disp_White_Pin};
 
 	for(int i = 0; i < NUM_OF_COLORS; i++){
 		HAL_GPIO_WritePin(GPIOC, color_pins[i], GPIO_PIN_RESET);
 	}
-
 	HAL_GPIO_WritePin(GPIOC, color_pins[color], GPIO_PIN_SET);
 }
 
 
+/**
+ * *****************************************************************************
+ * @brief 	Sets the brightness of the backlight by reading from ADC. Only works
+ * 			for backlight color red. This is used as the inititialization of the
+ * 			display backlight.
+ * @return 	void
+ * *****************************************************************************
+ */
+void set_display_backlight_brightness(){
+	HAL_ADC_Start(&hadc1);
+	htim3.Instance->CCR2 = HAL_ADC_GetValue(&hadc1);
+}
 /**
  * *****************************************************************************
  * @brief 	Turn the lcd with specifig settings.
@@ -46,7 +57,7 @@ void lcd_init(){
 	HAL_GPIO_WritePin(Disp_Reset_GPIO_Port, Disp_Reset_Pin, GPIO_PIN_SET);
 	HAL_Delay(100);
 
-	display_backlight(2);
+	set_display_backlight_brightness();
 
 	lcd_write_ins(0x3A);	//8-Bit data length extension Bit RE=1; REV=0
 	lcd_write_ins(0x09);	//4 line display

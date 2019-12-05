@@ -16,6 +16,8 @@
 
 #include "usart.h"
 #include "stdint.h"
+#include "string.h"
 
 void usb_transmit(uint8_t * string, uint16_t data_size);
 char * usb_receive(void);
+uint8_t * usb_receive_time(void);

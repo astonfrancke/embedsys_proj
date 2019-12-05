@@ -1,13 +1,13 @@
 /**
-  ******************************************************************************
-  * @file           : test_display.c
-  * @brief          : test.c file.
-  *                   This file tests the functions of the display.c file.
-  * @author			: Carl Aston Francke
-  * @version		: 1.0
-  * @date			: 27-November-2019
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : test_display.c
+ * @brief          : test.c file.
+ *                   This file tests the functions of the display.c file.
+ * @author			: Carl Aston Francke
+ * @version		: 1.0
+ * @date			: 27-November-2019
+ ******************************************************************************
+ */
 
 #include "display_test.h"
 
@@ -19,16 +19,15 @@
  */
 void display_test_program(void)
 {
-	test_backlight();
 	test_lcd_init();
-	test_lcd_write();
+	while(1) {test_backlight_brightness();}
 }
 
 
 /**
  * *****************************************************************************
  * @brief 	Tests the display_backlight function in display.c.
- * 			Parameter for lcd_backlight is defined as: 0 = RED, 1 = GREEN, 2 = WHITE.
+ * 			Parameter for lcd_backlight is defined as: 0 = GREEN, 1 = WHITE.
  * @return 	void
  * *****************************************************************************
  */
@@ -38,8 +37,16 @@ void test_backlight(void)
 	HAL_Delay(500);
 	display_backlight(1);
 	HAL_Delay(500);
-	display_backlight(2);
-	HAL_Delay(500);
+}
+
+/**
+ * *****************************************************************************
+ * @brief 	Tests the set_display_backlight_brightness function in display.c.
+ * @return 	void
+ * *****************************************************************************
+ */
+void test_backlight_brightness(void){
+	set_display_backlight_brightness();
 }
 
 /**

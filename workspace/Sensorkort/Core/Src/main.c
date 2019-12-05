@@ -24,6 +24,7 @@
 #include "i2c.h"
 #include "rtc.h"
 #include "spi.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -73,7 +74,7 @@ extern void initialise_monitor_handles(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+#undef RUN_TEST_PROGRAM
   /* USER CODE END 1 */
   
 
@@ -101,11 +102,12 @@ int main(void)
   MX_SPI2_Init();
   MX_UART4_Init();
   MX_UART5_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 #ifdef RUN_TEST_PROGRAM
-  rtc_test_program();
+  display_test_program();
 #else
-
+  alt1_program();
 #endif
   /* USER CODE END 2 */
 

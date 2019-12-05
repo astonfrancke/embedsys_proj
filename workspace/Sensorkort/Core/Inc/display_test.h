@@ -13,6 +13,7 @@
 #include "stdint.h"
 #include "stdbool.h"
 #include "display.h"
+#include "adc.h"
 
 #ifndef INC_DISPLAY_TEST_H_
 #define INC_DISPLAY_TEST_H_
@@ -24,5 +25,6 @@
 
 void display_test_program(void);
 void test_backlight(void);
+void test_backlight_brightness(void);
 void test_lcd_init(void);
 void test_lcd_write(void);

@@ -145,19 +145,20 @@ void set_time(uint8_t * date_time){
 	RTC_TimeTypeDef sTime;
 	RTC_DateTypeDef sDate;
 
-	sDate.Year = date_time[0];
-	sDate.Month = date_time[1];
-	sDate.WeekDay = date_time[2];
-	sDate.Date = date_time[3];
+	sDate.Year = 0x01;
+	sDate.Month = 0x01;
+	sDate.Date = 0x01;
+	sDate.WeekDay = 0x01;
+
 
 	if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)
 	{
 		Error_Handler();
 	}
 
-	sTime.Hours = date_time[4];
-	sTime.Minutes = date_time[5];
-	sTime.Seconds = date_time[6];
+	sTime.Hours = date_time[0];
+	sTime.Minutes = date_time[1];
+	sTime.Seconds = date_time[2];
 	sTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
 	sTime.StoreOperation = RTC_STOREOPERATION_RESET;
 	if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)

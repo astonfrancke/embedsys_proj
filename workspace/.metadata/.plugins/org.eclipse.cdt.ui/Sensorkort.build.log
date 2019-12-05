@@ -1,17 +1,10 @@
-10:28:17 **** Incremental Build of configuration Debug for project Sensorkort ****
+16:05:22 **** Incremental Build of configuration Debug for project Sensorkort ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/rtc.d" -MT"Core/Src/rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/rtc.o"
-arm-none-eabi-gcc -o "Sensorkort.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Sensorkort.elf
- 
-arm-none-eabi-objdump -h -S  Sensorkort.elf  > "Sensorkort.list"
 arm-none-eabi-size   Sensorkort.elf 
    text	   data	    bss	    dec	    hex	filename
-  24612	    128	   2168	  26908	   691c	Sensorkort.elf
+  29792	    120	   2240	  32152	   7d98	Sensorkort.elf
 Finished building: default.size.stdout
  
-Finished building: Sensorkort.list
- 
 
-10:28:21 Build Finished. 0 errors, 0 warnings. (took 4s.419ms)
+16:05:24 Build Finished. 0 errors, 0 warnings. (took 2s.304ms)
 

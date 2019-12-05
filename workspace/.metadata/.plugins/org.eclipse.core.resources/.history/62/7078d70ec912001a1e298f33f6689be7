@@ -1,0 +1,73 @@
+/**
+ ******************************************************************************
+ * @file           : test_rtc.c
+ * @brief          : test_rtc.c file.
+ *                   This file tests the functions of the rtc.c file.
+ * @author			: Carl Aston Francke
+ * @version		: 1.0
+ * @date			: 28-November-2019
+ ******************************************************************************
+ */
+
+
+#include "rtc_test.h"
+
+
+/**
+ * *****************************************************************************
+ * @brief 	Runs the test functions.
+ * @return 	void
+ * *****************************************************************************
+ */
+void rtc_test_program(){
+	test_set_time();
+	while(1){
+		HAL_Delay(1000);
+		test_get_time();
+	}
+}
+
+/**
+ * *****************************************************************************
+ * @brief 	Tests the set_time function in rtc.c.
+ * @return 	void
+ * *****************************************************************************
+ */
+void test_set_time(){
+	uint8_t i = 0, j = 0;
+
+	char * date_time = usb_receive();
+	uint8_t len = strlen(date_time);
+	uint8_t * date_time_values[len*sizeof(uint8_t)];
+	for(i = 0; i < len; i++){
+		if (date_time[i] == ',') {
+
+			// Increment j to point to next
+			// array location
+			j++;
+		}
+		else {
+
+			// subtract str[i] by 48 to convert it to int
+			// Generate number by multiplying 10 and adding
+			// (int)(str[i])
+			date_time_values[j] = date_time_values[j] * 10 + (uint8_t)(date_time[i] - 48);
+		}
+	}
+
+	set_time(date_time_values);
+	lcd_init();
+}
+
+
+/**
+ * *****************************************************************************
+ * @brief 	Tests the get_time function in rtc.c.
+ * @return 	void
+ * *****************************************************************************
+ */
+void test_get_time(){
+	lcd_clr();
+	lcd_set_pos(LINE1);
+	lcd_write_string(get_time());
+}

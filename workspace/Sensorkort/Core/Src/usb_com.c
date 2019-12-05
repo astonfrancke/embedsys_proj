@@ -35,3 +35,28 @@ char * usb_receive(void){
 	HAL_UART_Receive(&huart5, (uint8_t*)buffer, RCV_BUFFERSIZE, 10000);
 	return buffer;
 }
+
+/**
+ * *****************************************************************************
+ * @brief 	Receives data via USART(USB) 6 bytes, Timeout set to 10000 ms
+ * 			converts it into an array of uint8_t values format time[0] = H,
+ * 			time[1] = M, time[2] = S
+ * @return 	uint8_t *, The array of time values.
+ * *****************************************************************************
+ */
+uint8_t * usb_receive_time(void){
+	static uint8_t buffer[6];
+	static uint8_t time[3];
+	HAL_UART_Receive(&huart5, (uint8_t*)buffer, 6, 10000);
+
+	int index = 0;
+
+	for(int i = 0; i < strlen(buffer); i+=2) {
+		int tenth = (buffer[i] - '0') * 10;
+		int one = buffer[i+1] - '0';
+		time[index] = tenth + one;
+		index++;
+	}
+
+	return time;
+}

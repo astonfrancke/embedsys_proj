@@ -16,6 +16,7 @@
 #include "rtc.h"
 #include "display.h"
 #include "string.h"
+#include "usb_com.h"
 
 void rtc_test_program();
 void test_set_time();

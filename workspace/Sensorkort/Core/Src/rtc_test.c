@@ -1,13 +1,13 @@
 /**
-  ******************************************************************************
-  * @file           : test_rtc.c
-  * @brief          : test_rtc.c file.
-  *                   This file tests the functions of the rtc.c file.
-  * @author			: Carl Aston Francke
-  * @version		: 1.0
-  * @date			: 28-November-2019
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : test_rtc.c
+ * @brief          : test_rtc.c file.
+ *                   This file tests the functions of the rtc.c file.
+ * @author			: Carl Aston Francke
+ * @version		: 1.0
+ * @date			: 28-November-2019
+ ******************************************************************************
+ */
 
 
 #include "rtc_test.h"
@@ -22,8 +22,8 @@
 void rtc_test_program(){
 	test_set_time();
 	while(1){
-	HAL_Delay(1000);
-	test_get_time();
+		HAL_Delay(1000);
+		test_get_time();
 	}
 }
 
@@ -34,15 +34,16 @@ void rtc_test_program(){
  * *****************************************************************************
  */
 void test_set_time(){
-	static uint8_t date_time[] = { 0x13, 0x0B, 0x05, 0x1D, 0x0A, 0x00, 0x00 };
-	set_time(date_time);
+	uint8_t * time = usb_receive_time();
+	set_time(time);
 	lcd_init();
 }
 
 
 /**
  * *****************************************************************************
- * @brief 	Tests the get_time function in rtc.c.
+ * @brief 	Tests the get_time function in rtc.c and prints the result to the
+ * 			screen.
  * @return 	void
  * *****************************************************************************
  */

@@ -7094,3 +7094,1168 @@
 
 
 2019-11-29 10:19:20,692 [INFO] Activator:177 - !SESSION log4j initialized
+2019-11-29 11:23:35,161 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541
+2019-11-29 11:23:35,173 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/
+2019-11-29 11:23:35,177 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/boardmanager/
+2019-11-29 11:23:35,177 [INFO] DbMcus:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-29 11:23:35,177 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-29 11:23:35,178 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/mcu/
+2019-11-29 11:23:35,184 [INFO] DbMcusAds:72 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:35,185 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:35,187 [INFO] DbMcusJson:59 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:35,188 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:35,189 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,353 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-29 11:23:46,450 [INFO] RulesReader:52 - Compatibility file has been processed (179 Rules)
+2019-11-29 11:23:46,522 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_202
+2019-11-29 11:23:46,523 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/
+2019-11-29 11:23:46,523 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/boardmanager/
+2019-11-29 11:23:46,524 [INFO] DbMcus:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-29 11:23:46,524 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-29 11:23:46,524 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/mcu/
+2019-11-29 11:23:46,525 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,525 [INFO] DbMcusAds:72 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,525 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,525 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,525 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,525 [INFO] DbMcusJson:59 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,526 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,526 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,526 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,526 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,526 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,527 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,527 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-29 11:23:46,587 [INFO] MainPanel:185 - HeapMemory: 286261248
+2019-11-29 11:23:46,645 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/
+2019-11-29 11:23:46,646 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/boardmanager/
+2019-11-29 11:23:46,646 [INFO] DbMcus:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-29 11:23:46,646 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-11-29 11:23:46,646 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/mcu/
+2019-11-29 11:23:46,647 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,647 [INFO] DbMcusAds:72 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,647 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,648 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,648 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,648 [INFO] DbMcusJson:59 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,648 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,648 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,649 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,649 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-29 11:23:46,649 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,649 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-11-29 11:23:46,649 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-29 11:23:46,663 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541
+2019-11-29 11:23:46,665 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2019-11-29 11:23:46,666 [INFO] PluginManage:292 - Check plugin analytics
+2019-11-29 11:23:46,677 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2019-11-29 11:23:46,678 [INFO] PluginManage:292 - Check plugin clock
+2019-11-29 11:23:46,686 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2019-11-29 11:23:46,686 [INFO] PluginManage:292 - Check plugin ddr
+2019-11-29 11:23:46,689 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2019-11-29 11:23:46,689 [INFO] PluginManage:292 - Check plugin filemanager
+2019-11-29 11:23:46,794 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2019-11-29 11:23:46,795 [INFO] PluginManage:292 - Check plugin ipmanager
+2019-11-29 11:23:46,802 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2019-11-29 11:23:46,802 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2019-11-29 11:23:46,812 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2019-11-29 11:23:46,812 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2019-11-29 11:23:46,832 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2019-11-29 11:23:46,833 [INFO] PluginManage:292 - Check plugin power
+2019-11-29 11:23:46,842 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2019-11-29 11:23:46,842 [INFO] PluginManage:292 - Check plugin projectmanager
+2019-11-29 11:23:46,859 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2019-11-29 11:23:46,859 [INFO] PluginManage:292 - Check plugin thirdparty
+2019-11-29 11:23:46,890 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 14 ms. number of Sw pack : 5
+2019-11-29 11:23:46,911 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2019-11-29 11:23:46,911 [INFO] PluginManage:292 - Check plugin tools
+2019-11-29 11:23:46,913 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2019-11-29 11:23:46,914 [INFO] PluginManage:292 - Check plugin updater
+2019-11-29 11:23:46,925 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2019-11-29 11:23:46,925 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2019-11-29 11:23:47,068 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-29 11:23:47,148 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,149 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2019-11-29 11:23:47,151 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,151 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2019-11-29 11:23:47,154 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,154 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2019-11-29 11:23:47,155 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,156 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2019-11-29 11:23:47,158 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,158 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2019-11-29 11:23:47,172 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,173 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2019-11-29 11:23:47,178 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,178 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2019-11-29 11:23:47,180 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,180 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2019-11-29 11:23:47,184 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,184 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2019-11-29 11:23:47,189 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,190 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2019-11-29 11:23:47,191 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,191 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2019-11-29 11:23:47,193 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,194 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2019-11-29 11:23:47,197 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,197 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2019-11-29 11:23:47,202 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,202 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2019-11-29 11:23:47,205 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,206 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2019-11-29 11:23:47,208 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,208 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2019-11-29 11:23:47,210 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,211 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2019-11-29 11:23:47,213 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,213 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2019-11-29 11:23:47,215 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,215 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2019-11-29 11:23:47,218 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,219 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2019-11-29 11:23:47,220 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,220 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2019-11-29 11:23:47,223 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,223 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2019-11-29 11:23:47,226 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,226 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2019-11-29 11:23:47,229 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,229 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2019-11-29 11:23:47,232 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,232 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2019-11-29 11:23:47,237 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,240 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2019-11-29 11:23:47,241 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,242 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2019-11-29 11:23:47,244 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,245 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2019-11-29 11:23:47,247 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,248 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2019-11-29 11:23:47,250 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,250 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2019-11-29 11:23:47,253 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,253 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2019-11-29 11:23:47,255 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,255 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2019-11-29 11:23:47,258 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,259 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2019-11-29 11:23:47,261 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,261 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2019-11-29 11:23:47,263 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,263 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2019-11-29 11:23:47,265 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,265 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2019-11-29 11:23:47,267 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,267 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2019-11-29 11:23:47,269 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:47,270 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2019-11-29 11:23:47,884 [INFO] BoardConnectionPanel:220 - [DDR PANEL] osNameString: Windows
+2019-11-29 11:23:47,988 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2019-11-29 11:23:47,989 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2019-11-29 11:23:48,164 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-29 11:23:48,331 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-29 11:23:48,338 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-29 11:23:48,339 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-29 11:23:48,342 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2019-11-29 11:23:48,343 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.1.0.201910081157\tools\bin
+2019-11-29 11:23:48,348 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.1.0.201910081157\tools\bin\STM32_Programmer_CLI.exe -l
+2019-11-29 11:23:48,448 [INFO] MainDdrPanel:90 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.1.0.201910081157\tools\bin
+2019-11-29 11:23:48,452 [INFO] Updater:886 - Updater Version found : 5.4.0
+2019-11-29 11:23:48,469 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541
+2019-11-29 11:23:49,403 [INFO] MainUpdater:2232 - connection check result : 10
+2019-11-29 11:23:49,405 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2019-11-29 11:23:49,405 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-29 11:23:49,432 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2019-11-29 11:23:49,614 [INFO] MainUpdater:2232 - connection check result : 10
+2019-11-29 11:23:49,616 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-29 11:23:49,699 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-11-29 11:23:49,699 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-29 11:23:49,703 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-29 11:23:49,704 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 227879320 Bytes (286261248)
+2019-11-29 11:23:49,705 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-11-29 11:23:49,705 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-11-29 11:23:49,705 [INFO] OpenFileManager:269 - Change cursor
+2019-11-29 11:23:49,924 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-11-29 11:23:49,953 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 4 ms. number of Sw pack : 5
+2019-11-29 11:23:49,953 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-11-29 11:23:49,974 [INFO] IntegrityCheckThread:97 - End integrity checks thread
+2019-11-29 11:23:53,082 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (0#ChannelRegularConversion) currently not set
+2019-11-29 11:23:53,082 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (0#ChannelRegularConversion) currently not set
+2019-11-29 11:23:53,082 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (0#ChannelRegularConversion) currently not set
+2019-11-29 11:23:53,082 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (OffsetNumber) has Id (0#ChannelRegularConversion) currently not set
+2019-11-29 11:23:53,086 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-29 11:23:53,090 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RNGFreq_Value) has invalid value (64000000)
+2019-11-29 11:23:53,091 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDMMCFreq_Value) has invalid value (64000000)
+2019-11-29 11:23:53,092 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (64000000)
+2019-11-29 11:23:53,546 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 357100056 Bytes (444596224)
+2019-11-29 11:23:53,552 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 2 ms. number of Sw pack : 5
+2019-11-29 11:23:53,611 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-29 11:23:53,611 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-29 11:23:53,611 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-29 11:23:53,611 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-29 11:23:53,611 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2019-11-29 11:23:54,056 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-29 11:23:54,059 [INFO] PinOutPanel:1367 - setPackage(STM32L476RGTx,LQFP64)
+2019-11-29 11:23:54,888 [INFO] UtilMem:74 - Before build in PCC Used Memory: 327625200 Bytes (444596224)
+2019-11-29 11:23:55,289 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/elfra/.stm32cubemx/plugins/power
+2019-11-29 11:23:55,306 [INFO] UtilMem:74 - After build in PCC Used Memory: 352264696 Bytes (444596224)
+2019-11-29 11:23:55,318 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-29 11:23:55,318 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,319 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,319 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,319 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,320 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,320 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,320 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,321 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,321 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,321 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,321 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,322 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,322 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,323 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,323 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,323 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,324 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,324 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,324 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,325 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,325 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,325 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,326 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,326 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,326 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,327 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,327 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,327 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,330 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,330 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,330 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,330 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,330 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,330 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,330 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,331 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,331 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,331 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,331 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,332 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,332 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,332 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,333 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,333 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,334 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,334 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-29 11:23:55,366 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-29 11:23:55,389 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2019-11-29 11:23:55,486 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-29 11:23:55,490 [INFO] DbMcusXml:106 - Load MCU database from C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/families.xml
+2019-11-29 11:23:55,731 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-29 11:23:55,821 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-29 11:23:56,366 [INFO] DbMcusJson:87 - JSON generation date=Mon Sep 23 11:35:45 CEST 2019 (1569231345)
+2019-11-29 11:23:57,491 [INFO] DbMcus:193 - Found 1544 MCUs (1504 are supported by CubeMX, 1504 are visible in CubeMX)
+2019-11-29 11:23:57,492 [INFO] ApiDb:147 - User favorites file not found: C:\Users\elfra/.stm32cubemx/favorites.mcus.txt
+2019-11-29 11:23:57,492 [INFO] DbMcus:204 - Set 0 / 0 favorites MCUs
+2019-11-29 11:25:15,815 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-11-29 11:25:15,891 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2019-11-29 11:25:16,001 [INFO] NvicIntPanel:88 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2019-11-29 18:28:22,839 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 13:12:16,108 [INFO] Activator:176 - 
+
+
+2019-12-05 13:12:16,108 [INFO] Activator:177 - !SESSION log4j initialized
+2019-12-05 13:33:18,298 [INFO] Activator:176 - 
+
+
+2019-12-05 13:33:18,302 [INFO] Activator:177 - !SESSION log4j initialized
+2019-12-05 13:51:09,770 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541
+2019-12-05 13:51:09,778 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/
+2019-12-05 13:51:09,778 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/boardmanager/
+2019-12-05 13:51:09,778 [INFO] DbMcus:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-12-05 13:51:09,778 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-12-05 13:51:09,778 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/mcu/
+2019-12-05 13:51:09,799 [INFO] DbMcusAds:72 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:09,799 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:09,799 [INFO] DbMcusJson:59 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:09,799 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:09,803 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:09,811 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-12-05 13:51:09,904 [INFO] RulesReader:52 - Compatibility file has been processed (179 Rules)
+2019-12-05 13:51:10,009 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_202
+2019-12-05 13:51:10,009 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/
+2019-12-05 13:51:10,009 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/boardmanager/
+2019-12-05 13:51:10,009 [INFO] DbMcus:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-12-05 13:51:10,009 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-12-05 13:51:10,009 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/mcu/
+2019-12-05 13:51:10,009 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,009 [INFO] DbMcusAds:72 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,009 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,009 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,009 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,009 [INFO] DbMcusJson:59 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,013 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,013 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,013 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,013 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,013 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,013 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,013 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-12-05 13:51:10,079 [INFO] MainPanel:185 - HeapMemory: 469762048
+2019-12-05 13:51:10,165 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/
+2019-12-05 13:51:10,165 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/boardmanager/
+2019-12-05 13:51:10,165 [INFO] DbMcus:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-12-05 13:51:10,165 [INFO] DbBoards:232 - Set plugin images path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/images/
+2019-12-05 13:51:10,165 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/plugins/mcufinder/mcu/
+2019-12-05 13:51:10,165 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,165 [INFO] DbMcusAds:72 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,169 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,169 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,169 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,169 [INFO] DbMcusJson:59 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,169 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,169 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,169 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,169 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-05 13:51:10,169 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,169 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\elfra\.stmcufinder\plugins\mcufinder/ => C:\Users\elfra\.stmcufinder\plugins\mcufinder
+2019-12-05 13:51:10,169 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\elfra\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-12-05 13:51:10,177 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541
+2019-12-05 13:51:10,177 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2019-12-05 13:51:10,177 [INFO] PluginManage:292 - Check plugin analytics
+2019-12-05 13:51:10,193 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2019-12-05 13:51:10,193 [INFO] PluginManage:292 - Check plugin clock
+2019-12-05 13:51:10,205 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2019-12-05 13:51:10,205 [INFO] PluginManage:292 - Check plugin ddr
+2019-12-05 13:51:10,221 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2019-12-05 13:51:10,221 [INFO] PluginManage:292 - Check plugin filemanager
+2019-12-05 13:51:10,333 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2019-12-05 13:51:10,333 [INFO] PluginManage:292 - Check plugin ipmanager
+2019-12-05 13:51:10,341 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2019-12-05 13:51:10,341 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2019-12-05 13:51:10,349 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2019-12-05 13:51:10,349 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2019-12-05 13:51:10,373 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2019-12-05 13:51:10,373 [INFO] PluginManage:292 - Check plugin power
+2019-12-05 13:51:10,377 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2019-12-05 13:51:10,377 [INFO] PluginManage:292 - Check plugin projectmanager
+2019-12-05 13:51:10,397 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2019-12-05 13:51:10,397 [INFO] PluginManage:292 - Check plugin thirdparty
+2019-12-05 13:51:10,457 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 12 ms. number of Sw pack : 5
+2019-12-05 13:51:10,477 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2019-12-05 13:51:10,477 [INFO] PluginManage:292 - Check plugin tools
+2019-12-05 13:51:10,477 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2019-12-05 13:51:10,477 [INFO] PluginManage:292 - Check plugin updater
+2019-12-05 13:51:10,493 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2019-12-05 13:51:10,497 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2019-12-05 13:51:10,644 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-12-05 13:51:10,728 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,728 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2019-12-05 13:51:10,732 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,732 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2019-12-05 13:51:10,736 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,736 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2019-12-05 13:51:10,736 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,736 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2019-12-05 13:51:10,740 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,740 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2019-12-05 13:51:10,744 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,744 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2019-12-05 13:51:10,748 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,748 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2019-12-05 13:51:10,752 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,752 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2019-12-05 13:51:10,756 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,756 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2019-12-05 13:51:10,764 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,764 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2019-12-05 13:51:10,768 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,768 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2019-12-05 13:51:10,768 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,772 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2019-12-05 13:51:10,772 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,776 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2019-12-05 13:51:10,776 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,776 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2019-12-05 13:51:10,776 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,776 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2019-12-05 13:51:10,776 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,776 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2019-12-05 13:51:10,776 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,776 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2019-12-05 13:51:10,792 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,792 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2019-12-05 13:51:10,796 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,796 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2019-12-05 13:51:10,800 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,800 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2019-12-05 13:51:10,800 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,800 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2019-12-05 13:51:10,804 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,804 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2019-12-05 13:51:10,804 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,804 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2019-12-05 13:51:10,804 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,804 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2019-12-05 13:51:10,804 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,804 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2019-12-05 13:51:10,820 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,824 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2019-12-05 13:51:10,824 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,824 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2019-12-05 13:51:10,828 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,828 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2019-12-05 13:51:10,832 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,832 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2019-12-05 13:51:10,836 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,836 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2019-12-05 13:51:10,840 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,840 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2019-12-05 13:51:10,840 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,840 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2019-12-05 13:51:10,844 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,844 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2019-12-05 13:51:10,848 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,848 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2019-12-05 13:51:10,852 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,852 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2019-12-05 13:51:10,852 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,852 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2019-12-05 13:51:10,856 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,856 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2019-12-05 13:51:10,860 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:10,860 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2019-12-05 13:51:11,400 [INFO] BoardConnectionPanel:220 - [DDR PANEL] osNameString: Windows
+2019-12-05 13:51:11,526 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2019-12-05 13:51:11,530 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2019-12-05 13:51:11,710 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-12-05 13:51:11,922 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-12-05 13:51:11,926 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-12-05 13:51:11,926 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-12-05 13:51:11,926 [INFO] BoardConnectionPanel:3149 - [DDR PANEL] STM32CubeIDE environment
+2019-12-05 13:51:11,926 [INFO] MainDdrPanel:100 - [DDR PANEL] GETTER - cubeProgrammerPath is: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.1.0.201910081157\tools\bin
+2019-12-05 13:51:11,942 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.1.0.201910081157\tools\bin\STM32_Programmer_CLI.exe -l
+2019-12-05 13:51:12,046 [INFO] MainDdrPanel:90 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.1.0.201910081157\tools\bin
+2019-12-05 13:51:12,050 [INFO] Updater:886 - Updater Version found : 5.4.0
+2019-12-05 13:51:12,068 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541
+2019-12-05 13:51:12,152 [INFO] MainUpdater:2232 - connection check result : 10
+2019-12-05 13:51:12,156 [INFO] MainUpdater:2859 - Updater definition file requires update
+2019-12-05 13:51:12,156 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2019-12-05 13:51:12,156 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-12-05 13:51:12,225 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2019-12-05 13:51:12,334 [INFO] FileExtend:210 - Unzip File : updaters.zip
+2019-12-05 13:51:12,334 [INFO] FileExtend:225 - Standard Zip Deflate
+2019-12-05 13:51:12,590 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2019-12-05 13:51:12,704 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2019-12-05 13:51:12,772 [INFO] LoadServerUpdatesThread:287 - End of LoadServerUpdate Thread
+2019-12-05 13:51:12,804 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2019-12-05 13:51:12,972 [INFO] MainUpdater:2232 - connection check result : 10
+2019-12-05 13:51:12,972 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-12-05 13:51:13,100 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-12-05 13:51:13,100 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-12-05 13:51:13,104 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-12-05 13:51:13,104 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 202921680 Bytes (684720128)
+2019-12-05 13:51:13,104 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-12-05 13:51:13,104 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-12-05 13:51:13,104 [INFO] OpenFileManager:269 - Change cursor
+2019-12-05 13:51:13,501 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-12-05 13:51:13,541 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 4 ms. number of Sw pack : 5
+2019-12-05 13:51:13,541 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-12-05 13:51:13,553 [INFO] IntegrityCheckThread:97 - End integrity checks thread
+2019-12-05 13:51:15,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 13:51:15,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 13:51:15,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 13:51:15,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (OffsetNumber) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 13:51:15,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-12-05 13:51:15,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RNGFreq_Value) has invalid value (64000000)
+2019-12-05 13:51:15,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDMMCFreq_Value) has invalid value (64000000)
+2019-12-05 13:51:15,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (64000000)
+2019-12-05 13:51:16,299 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 265888552 Bytes (684720128)
+2019-12-05 13:51:16,303 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/elfra/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 0 ms. number of Sw pack : 5
+2019-12-05 13:51:16,342 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-12-05 13:51:16,342 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-12-05 13:51:16,342 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-12-05 13:51:16,342 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-12-05 13:51:16,342 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2019-12-05 13:51:16,674 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-12-05 13:51:16,674 [INFO] PinOutPanel:1367 - setPackage(STM32L476RGTx,LQFP64)
+2019-12-05 13:51:17,254 [INFO] UtilMem:74 - Before build in PCC Used Memory: 479540712 Bytes (684720128)
+2019-12-05 13:51:17,613 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/elfra/.stm32cubemx/plugins/power
+2019-12-05 13:51:17,626 [INFO] UtilMem:74 - After build in PCC Used Memory: 504180208 Bytes (684720128)
+2019-12-05 13:51:17,641 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,641 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,657 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 13:51:17,677 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 13:51:17,701 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2019-12-05 13:51:17,777 [INFO] OpenFileManager:289 - Restore cursor
+2019-12-05 13:51:17,777 [INFO] DbMcusXml:106 - Load MCU database from C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\/mcu/families.xml
+2019-12-05 13:51:17,977 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 13:51:18,069 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 13:51:18,268 [INFO] DbMcusJson:87 - JSON generation date=Mon Sep 23 11:35:45 CEST 2019 (1569231345)
+2019-12-05 13:51:19,014 [INFO] DbMcus:193 - Found 1544 MCUs (1504 are supported by CubeMX, 1504 are visible in CubeMX)
+2019-12-05 13:51:19,018 [INFO] ApiDb:147 - User favorites file not found: C:\Users\elfra/.stm32cubemx/favorites.mcus.txt
+2019-12-05 13:51:19,018 [INFO] DbMcus:204 - Set 0 / 0 favorites MCUs
+2019-12-05 13:52:17,078 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 13:52:17,226 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 13:52:24,392 [INFO] DbMcusDocs:126 - JSON generation date=Mon Sep 23 11:35:45 CEST 2019 (1569231345)
+2019-12-05 13:52:24,476 [INFO] DbMcusDocs:61 - Found 525 MCUs documents
+2019-12-05 13:52:25,731 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 13:52:53,522 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 13:52:53,678 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:01:30,666 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Tab changed to: Clock Configuration
+2019-12-05 14:08:34,306 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2019-12-05 14:08:34,324 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Tab changed to: Pinout & Configuration
+2019-12-05 14:08:34,347 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2019-12-05 14:08:42,115 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:08:49,364 [INFO] NvicIntPanel:88 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,531x420,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2019-12-05 14:09:02,810 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:09:40,006 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:09:40,121 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:09:40,177 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:10:10,582 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Tab changed to: Clock Configuration
+2019-12-05 14:10:57,862 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2019-12-05 14:10:57,876 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Tab changed to: Pinout & Configuration
+2019-12-05 14:10:57,892 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2019-12-05 14:22:48,665 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 398962496 Bytes (1073741824)
+2019-12-05 14:23:06,967 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 246642496 Bytes (1073741824)
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SPI
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8L4
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: ADC
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: I2C
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RTC
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: UART
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: UART
+2019-12-05 14:23:07,280 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-12-05 14:23:07,295 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-12-05 14:23:07,650 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\license.tmp_save
+2019-12-05 14:23:07,955 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\license.tmp
+2019-12-05 14:23:08,111 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\gpio.c_save
+2019-12-05 14:23:08,236 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\gpio.c
+2019-12-05 14:23:08,236 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\gpio.h_save
+2019-12-05 14:23:08,330 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\gpio.h
+2019-12-05 14:23:08,376 [ERROR] IPConfigManager:1276 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2019-12-05 14:23:08,486 [ERROR] IPConfigManager:1276 - ERROR: the RefConfig I2CEnableFastModePlus is not available in your config.xml file
+2019-12-05 14:23:09,145 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:23:09,145 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2019-12-05 14:23:09,145 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:23:09,161 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\adc.c_save
+2019-12-05 14:23:09,333 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\adc.c
+2019-12-05 14:23:09,333 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\adc.h_save
+2019-12-05 14:23:09,411 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\adc.h
+2019-12-05 14:23:09,411 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:23:09,411 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for I2C
+2019-12-05 14:23:09,411 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:23:09,411 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\i2c.c_save
+2019-12-05 14:23:09,536 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\i2c.c
+2019-12-05 14:23:09,551 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\i2c.h_save
+2019-12-05 14:23:09,610 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\i2c.h
+2019-12-05 14:23:09,612 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:23:09,613 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for RTC
+2019-12-05 14:23:09,613 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:23:09,620 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\rtc.c_save
+2019-12-05 14:23:09,713 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\rtc.c
+2019-12-05 14:23:09,718 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\rtc.h_save
+2019-12-05 14:23:09,779 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\rtc.h
+2019-12-05 14:23:09,781 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:23:09,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-12-05 14:23:09,783 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:23:09,789 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\spi.c_save
+2019-12-05 14:23:09,868 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\spi.c
+2019-12-05 14:23:09,883 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\spi.h_save
+2019-12-05 14:23:09,946 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\spi.h
+2019-12-05 14:23:09,946 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:23:09,946 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-05 14:23:09,946 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:23:09,961 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\sys.c_save
+2019-12-05 14:23:10,071 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\sys.c
+2019-12-05 14:23:10,086 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\sys.h_save
+2019-12-05 14:23:10,149 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\sys.h
+2019-12-05 14:23:10,164 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:23:10,164 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-05 14:23:10,164 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:23:10,164 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\tim.c_save
+2019-12-05 14:23:10,242 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\tim.c
+2019-12-05 14:23:10,258 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\tim.h_save
+2019-12-05 14:23:10,305 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\tim.h
+2019-12-05 14:23:10,305 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:23:10,305 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-12-05 14:23:10,305 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:23:10,321 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\usart.c_save
+2019-12-05 14:23:10,414 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\usart.c
+2019-12-05 14:23:10,414 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\usart.h_save
+2019-12-05 14:23:10,508 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\usart.h
+2019-12-05 14:23:10,508 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-05 14:23:10,508 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:23:10,524 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_it.c_save
+2019-12-05 14:23:10,643 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_it.c
+2019-12-05 14:23:10,650 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_it.h_save
+2019-12-05 14:23:10,739 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_it.h
+2019-12-05 14:23:10,749 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_hal_msp.c_save
+2019-12-05 14:23:10,839 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_hal_msp.c
+2019-12-05 14:23:10,839 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\system.tmp_save
+2019-12-05 14:23:10,886 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\system.tmp
+2019-12-05 14:23:10,901 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_hal_conf.h_save
+2019-12-05 14:23:10,964 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_hal_conf.h
+2019-12-05 14:23:10,995 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\main.h_save
+2019-12-05 14:23:11,057 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\main.h
+2019-12-05 14:23:11,073 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\main.c_save
+2019-12-05 14:23:11,151 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\main.c
+2019-12-05 14:23:11,815 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 147mS.
+2019-12-05 14:23:11,820 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-12-05 14:23:12,007 [INFO] ConfigFileManager:953 - The Die is : DIE415
+2019-12-05 14:23:13,813 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 1993mS.
+2019-12-05 14:23:13,813 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-12-05 14:23:13,813 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-12-05 14:38:08,279 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 487027208 Bytes (1073741824)
+2019-12-05 14:38:09,465 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 497299536 Bytes (1073741824)
+2019-12-05 14:38:09,637 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 508958288 Bytes (1073741824)
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SPI
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8L4
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: ADC
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: I2C
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RTC
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: UART
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: UART
+2019-12-05 14:38:09,765 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-12-05 14:38:09,765 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-12-05 14:38:09,968 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\license.tmp_save
+2019-12-05 14:38:10,015 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\license.tmp
+2019-12-05 14:38:10,093 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\gpio.c_save
+2019-12-05 14:38:10,140 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\gpio.c
+2019-12-05 14:38:10,155 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\gpio.h_save
+2019-12-05 14:38:10,202 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\gpio.h
+2019-12-05 14:38:10,218 [ERROR] IPConfigManager:1276 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2019-12-05 14:38:10,296 [ERROR] IPConfigManager:1276 - ERROR: the RefConfig I2CEnableFastModePlus is not available in your config.xml file
+2019-12-05 14:38:10,861 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:38:10,861 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2019-12-05 14:38:10,861 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:38:10,877 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\adc.c_save
+2019-12-05 14:38:10,955 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\adc.c
+2019-12-05 14:38:10,955 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\adc.h_save
+2019-12-05 14:38:11,002 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\adc.h
+2019-12-05 14:38:11,002 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:38:11,002 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for I2C
+2019-12-05 14:38:11,002 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:38:11,017 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\i2c.c_save
+2019-12-05 14:38:11,080 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\i2c.c
+2019-12-05 14:38:11,095 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\i2c.h_save
+2019-12-05 14:38:11,142 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\i2c.h
+2019-12-05 14:38:11,142 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:38:11,142 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for RTC
+2019-12-05 14:38:11,142 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:38:11,142 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\rtc.c_save
+2019-12-05 14:38:11,220 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\rtc.c
+2019-12-05 14:38:11,220 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\rtc.h_save
+2019-12-05 14:38:11,267 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\rtc.h
+2019-12-05 14:38:11,267 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:38:11,267 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-12-05 14:38:11,267 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:38:11,283 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\spi.c_save
+2019-12-05 14:38:11,345 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\spi.c
+2019-12-05 14:38:11,345 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\spi.h_save
+2019-12-05 14:38:11,392 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\spi.h
+2019-12-05 14:38:11,408 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:38:11,408 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-05 14:38:11,408 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:38:11,408 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\sys.c_save
+2019-12-05 14:38:11,470 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\sys.c
+2019-12-05 14:38:11,470 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\sys.h_save
+2019-12-05 14:38:11,517 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\sys.h
+2019-12-05 14:38:11,517 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:38:11,517 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-05 14:38:11,517 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:38:11,533 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\tim.c_save
+2019-12-05 14:38:11,607 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\tim.c
+2019-12-05 14:38:11,613 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\tim.h_save
+2019-12-05 14:38:11,661 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\tim.h
+2019-12-05 14:38:11,664 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:38:11,665 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-12-05 14:38:11,666 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:38:11,673 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\usart.c_save
+2019-12-05 14:38:11,739 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\usart.c
+2019-12-05 14:38:11,739 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\usart.h_save
+2019-12-05 14:38:11,786 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\usart.h
+2019-12-05 14:38:11,786 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-05 14:38:11,786 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:38:11,802 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_it.c_save
+2019-12-05 14:38:11,864 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_it.c
+2019-12-05 14:38:11,864 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_it.h_save
+2019-12-05 14:38:11,927 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_it.h
+2019-12-05 14:38:11,927 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_hal_msp.c_save
+2019-12-05 14:38:11,989 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_hal_msp.c
+2019-12-05 14:38:12,005 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\system.tmp_save
+2019-12-05 14:38:12,052 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\system.tmp
+2019-12-05 14:38:12,052 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_hal_conf.h_save
+2019-12-05 14:38:12,099 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_hal_conf.h
+2019-12-05 14:38:12,130 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\main.h_save
+2019-12-05 14:38:12,239 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\main.h
+2019-12-05 14:38:12,239 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\main.c_save
+2019-12-05 14:38:12,302 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\main.c
+2019-12-05 14:38:12,683 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 85mS.
+2019-12-05 14:38:12,685 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-12-05 14:38:12,852 [INFO] ConfigFileManager:953 - The Die is : DIE415
+2019-12-05 14:38:14,343 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 1658mS.
+2019-12-05 14:38:14,343 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-12-05 14:38:14,343 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-12-05 14:47:05,413 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:54:14,683 [INFO] MainUpdater:2232 - connection check result : 10
+2019-12-05 14:54:14,683 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-12-05 14:54:14,746 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2019-12-05 14:54:14,762 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-12-05 14:54:14,762 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-12-05 14:54:14,777 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-12-05 14:54:14,777 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 594761576 Bytes (1073741824)
+2019-12-05 14:54:14,777 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-12-05 14:54:14,777 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-12-05 14:54:14,777 [INFO] OpenFileManager:269 - Change cursor
+2019-12-05 14:54:14,777 [INFO] RulesReader:52 - Compatibility file has been processed (179 Rules)
+2019-12-05 14:54:16,859 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 14:54:16,859 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 14:54:16,859 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 14:54:16,859 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (OffsetNumber) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 14:54:16,874 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-12-05 14:54:16,874 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RNGFreq_Value) has invalid value (64000000)
+2019-12-05 14:54:16,874 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDMMCFreq_Value) has invalid value (64000000)
+2019-12-05 14:54:16,874 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (64000000)
+2019-12-05 14:54:17,109 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 649709432 Bytes (1073741824)
+2019-12-05 14:54:17,124 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-12-05 14:54:17,124 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-12-05 14:54:17,124 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-12-05 14:54:17,124 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-12-05 14:54:17,124 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2019-12-05 14:54:17,265 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-12-05 14:54:17,265 [INFO] PinOutPanel:1367 - setPackage(STM32L476RGTx,LQFP64)
+2019-12-05 14:54:17,624 [INFO] UtilMem:74 - Before build in PCC Used Memory: 837685600 Bytes (1073741824)
+2019-12-05 14:54:17,733 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/elfra/.stm32cubemx/plugins/power
+2019-12-05 14:54:17,739 [INFO] UtilMem:74 - After build in PCC Used Memory: 854989144 Bytes (1073741824)
+2019-12-05 14:54:17,739 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,739 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 14:54:17,755 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:54:17,786 [INFO] OpenFileManager:289 - Restore cursor
+2019-12-05 14:54:17,958 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:54:17,973 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:54:24,361 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:54:24,361 [INFO] Gpio:245 - dependency for GPIO [ADC1, I2C3, RCC, RTC, SPI2, SYS, TIM3, UART4, UART5]
+2019-12-05 14:54:32,473 [INFO] Gpio:245 - dependency for GPIO [ADC1, I2C3, RCC, RTC, SPI2, SYS, TIM3, UART4, UART5]
+2019-12-05 14:54:32,473 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:54:43,811 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 14:54:43,827 [INFO] Gpio:245 - dependency for GPIO [ADC1, I2C3, RCC, RTC, SPI2, SYS, TIM3, UART4, UART5]
+2019-12-05 14:54:54,320 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 750710656 Bytes (1073741824)
+2019-12-05 14:54:55,355 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 759625592 Bytes (1073741824)
+2019-12-05 14:54:55,527 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 829353856 Bytes (1073741824)
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SPI
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8L4
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: ADC
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: I2C
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RTC
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: UART
+2019-12-05 14:54:55,648 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: UART
+2019-12-05 14:54:55,649 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-12-05 14:54:55,649 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-12-05 14:54:55,889 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\license.tmp_save
+2019-12-05 14:54:55,921 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\license.tmp
+2019-12-05 14:54:55,999 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\gpio.c_save
+2019-12-05 14:54:56,061 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\gpio.c
+2019-12-05 14:54:56,061 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\gpio.h_save
+2019-12-05 14:54:56,124 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\gpio.h
+2019-12-05 14:54:56,139 [ERROR] IPConfigManager:1276 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2019-12-05 14:54:56,217 [ERROR] IPConfigManager:1276 - ERROR: the RefConfig I2CEnableFastModePlus is not available in your config.xml file
+2019-12-05 14:54:56,761 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:54:56,777 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2019-12-05 14:54:56,777 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:54:56,777 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\adc.c_save
+2019-12-05 14:54:56,840 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\adc.c
+2019-12-05 14:54:56,855 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\adc.h_save
+2019-12-05 14:54:56,902 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\adc.h
+2019-12-05 14:54:56,902 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:54:56,902 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for I2C
+2019-12-05 14:54:56,902 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:54:56,918 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\i2c.c_save
+2019-12-05 14:54:56,980 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\i2c.c
+2019-12-05 14:54:56,980 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\i2c.h_save
+2019-12-05 14:54:57,027 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\i2c.h
+2019-12-05 14:54:57,027 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:54:57,027 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for RTC
+2019-12-05 14:54:57,027 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:54:57,043 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\rtc.c_save
+2019-12-05 14:54:57,105 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\rtc.c
+2019-12-05 14:54:57,121 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\rtc.h_save
+2019-12-05 14:54:57,168 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\rtc.h
+2019-12-05 14:54:57,168 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:54:57,168 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-12-05 14:54:57,168 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:54:57,168 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\spi.c_save
+2019-12-05 14:54:57,261 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\spi.c
+2019-12-05 14:54:57,261 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\spi.h_save
+2019-12-05 14:54:57,308 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\spi.h
+2019-12-05 14:54:57,308 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:54:57,308 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-05 14:54:57,308 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:54:57,324 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\sys.c_save
+2019-12-05 14:54:57,386 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\sys.c
+2019-12-05 14:54:57,386 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\sys.h_save
+2019-12-05 14:54:57,433 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\sys.h
+2019-12-05 14:54:57,433 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:54:57,433 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-05 14:54:57,433 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:54:57,433 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\tim.c_save
+2019-12-05 14:54:57,511 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\tim.c
+2019-12-05 14:54:57,511 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\tim.h_save
+2019-12-05 14:54:57,565 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\tim.h
+2019-12-05 14:54:57,568 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 14:54:57,569 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-12-05 14:54:57,570 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:54:57,575 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\usart.c_save
+2019-12-05 14:54:57,640 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\usart.c
+2019-12-05 14:54:57,640 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\usart.h_save
+2019-12-05 14:54:57,687 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\usart.h
+2019-12-05 14:54:57,703 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-05 14:54:57,703 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 14:54:57,703 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_it.c_save
+2019-12-05 14:54:57,765 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_it.c
+2019-12-05 14:54:57,765 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_it.h_save
+2019-12-05 14:54:57,827 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_it.h
+2019-12-05 14:54:57,827 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_hal_msp.c_save
+2019-12-05 14:54:57,906 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_hal_msp.c
+2019-12-05 14:54:57,906 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\system.tmp_save
+2019-12-05 14:54:57,952 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\system.tmp
+2019-12-05 14:54:57,952 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_hal_conf.h_save
+2019-12-05 14:54:57,999 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_hal_conf.h
+2019-12-05 14:54:58,015 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\main.h_save
+2019-12-05 14:54:58,077 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\main.h
+2019-12-05 14:54:58,077 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\main.c_save
+2019-12-05 14:54:58,140 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\main.c
+2019-12-05 14:54:58,546 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 94mS.
+2019-12-05 14:54:58,546 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-12-05 14:54:58,843 [INFO] ConfigFileManager:953 - The Die is : DIE415
+2019-12-05 14:54:59,912 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 1366mS.
+2019-12-05 14:54:59,912 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-12-05 14:54:59,912 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-12-05 14:58:58,788 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 16:01:21,060 [INFO] MainUpdater:2232 - connection check result : 10
+2019-12-05 16:01:21,060 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-12-05 16:01:21,154 [INFO] I2cTimingTraitement:320 - 0x10909CEC
+2019-12-05 16:01:21,170 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-12-05 16:01:21,170 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-12-05 16:01:21,170 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-12-05 16:01:21,170 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 897914152 Bytes (1073741824)
+2019-12-05 16:01:21,170 [INFO] MicroXplorer:390 - Change Database Path : 
+2019-12-05 16:01:21,170 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.40
+2019-12-05 16:01:21,170 [INFO] OpenFileManager:269 - Change cursor
+2019-12-05 16:01:21,185 [INFO] RulesReader:52 - Compatibility file has been processed (179 Rules)
+2019-12-05 16:01:22,927 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Rank) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 16:01:22,927 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (Channel) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 16:01:22,927 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (SamplingTime) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 16:01:22,927 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (OffsetNumber) has Id (0#ChannelRegularConversion) currently not set
+2019-12-05 16:01:22,927 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-12-05 16:01:22,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RNGFreq_Value) has invalid value (64000000)
+2019-12-05 16:01:22,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDMMCFreq_Value) has invalid value (64000000)
+2019-12-05 16:01:22,974 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (64000000)
+2019-12-05 16:01:23,177 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 688898432 Bytes (1073741824)
+2019-12-05 16:01:23,177 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-12-05 16:01:23,177 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-12-05 16:01:23,177 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-12-05 16:01:23,177 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-12-05 16:01:23,177 [INFO] ThirdParty:897 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.1.0
+2019-12-05 16:01:23,286 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-12-05 16:01:23,286 [INFO] PinOutPanel:1367 - setPackage(STM32L476RGTx,LQFP64)
+2019-12-05 16:01:23,599 [INFO] UtilMem:74 - Before build in PCC Used Memory: 864291688 Bytes (1073741824)
+2019-12-05 16:01:23,682 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/elfra/.stm32cubemx/plugins/power
+2019-12-05 16:01:23,689 [INFO] UtilMem:74 - After build in PCC Used Memory: 882117480 Bytes (1073741824)
+2019-12-05 16:01:23,693 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 16:01:23,693 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,694 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,695 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,696 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,696 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,696 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,696 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,696 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,696 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,696 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,696 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,696 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,697 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,697 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,697 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,697 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,697 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,697 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,697 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,698 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,698 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,698 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,698 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,698 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,698 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,698 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,699 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,699 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,699 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,699 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,699 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,699 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,699 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,699 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,700 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,700 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,700 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,700 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,700 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,701 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,701 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,701 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-12-05 16:01:23,705 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 16:01:23,721 [INFO] OpenFileManager:289 - Restore cursor
+2019-12-05 16:01:23,861 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 16:01:23,861 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 16:01:30,634 [INFO] BlockDiagram:1827 - stop enableDisableButtons
+2019-12-05 16:01:50,033 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 576458072 Bytes (1073741824)
+2019-12-05 16:01:51,752 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 586417504 Bytes (1073741824)
+2019-12-05 16:01:51,930 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 596903264 Bytes (1073741824)
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SPI
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: TIM1_8L4
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: SYS
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: ADC
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RCC
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: I2C
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: RTC
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: NVIC
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: UART
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: UART
+2019-12-05 16:01:52,039 [INFO] BlockDiagram:1871 - set Specific Code input for plugin: GPIO
+2019-12-05 16:01:52,039 [INFO] CodeGenerator:598 - code generatio: config db path: C:\ST\STM32CubeIDE_1.1.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.4.0.201910091541\\db\
+2019-12-05 16:01:52,242 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\license.tmp_save
+2019-12-05 16:01:52,274 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\license.tmp
+2019-12-05 16:01:52,352 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\gpio.c_save
+2019-12-05 16:01:52,399 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\gpio.c
+2019-12-05 16:01:52,399 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\gpio.h_save
+2019-12-05 16:01:52,446 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\gpio.h
+2019-12-05 16:01:52,461 [ERROR] IPConfigManager:1276 - ERROR: the RefConfig ADC_InternalChannelConfig is not available in your config.xml file
+2019-12-05 16:01:52,508 [ERROR] IPConfigManager:1276 - ERROR: the RefConfig I2CEnableFastModePlus is not available in your config.xml file
+2019-12-05 16:01:52,988 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 16:01:52,989 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for ADC
+2019-12-05 16:01:52,989 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 16:01:52,994 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\adc.c_save
+2019-12-05 16:01:53,067 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\adc.c
+2019-12-05 16:01:53,073 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\adc.h_save
+2019-12-05 16:01:53,120 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\adc.h
+2019-12-05 16:01:53,122 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 16:01:53,123 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for I2C
+2019-12-05 16:01:53,124 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 16:01:53,128 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\i2c.c_save
+2019-12-05 16:01:53,195 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\i2c.c
+2019-12-05 16:01:53,200 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\i2c.h_save
+2019-12-05 16:01:53,245 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\i2c.h
+2019-12-05 16:01:53,247 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 16:01:53,247 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for RTC
+2019-12-05 16:01:53,248 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 16:01:53,253 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\rtc.c_save
+2019-12-05 16:01:53,319 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\rtc.c
+2019-12-05 16:01:53,324 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\rtc.h_save
+2019-12-05 16:01:53,433 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\rtc.h
+2019-12-05 16:01:53,436 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 16:01:53,438 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-12-05 16:01:53,438 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 16:01:53,446 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\spi.c_save
+2019-12-05 16:01:53,517 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\spi.c
+2019-12-05 16:01:53,523 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\spi.h_save
+2019-12-05 16:01:53,558 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\spi.h
+2019-12-05 16:01:53,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 16:01:53,577 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-05 16:01:53,578 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 16:01:53,582 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\sys.c_save
+2019-12-05 16:01:53,646 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\sys.c
+2019-12-05 16:01:53,651 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\sys.h_save
+2019-12-05 16:01:53,697 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\sys.h
+2019-12-05 16:01:53,699 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 16:01:53,699 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-05 16:01:53,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 16:01:53,705 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\tim.c_save
+2019-12-05 16:01:53,769 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\tim.c
+2019-12-05 16:01:53,774 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\tim.h_save
+2019-12-05 16:01:53,816 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\tim.h
+2019-12-05 16:01:53,818 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-12-05 16:01:53,819 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-12-05 16:01:53,819 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 16:01:53,824 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\usart.c_save
+2019-12-05 16:01:53,889 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\usart.c
+2019-12-05 16:01:53,890 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\usart.h_save
+2019-12-05 16:01:53,937 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\usart.h
+2019-12-05 16:01:53,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-05 16:01:53,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-12-05 16:01:53,937 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_it.c_save
+2019-12-05 16:01:53,984 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_it.c
+2019-12-05 16:01:53,999 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_it.h_save
+2019-12-05 16:01:54,030 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_it.h
+2019-12-05 16:01:54,046 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_hal_msp.c_save
+2019-12-05 16:01:54,108 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\stm32l4xx_hal_msp.c
+2019-12-05 16:01:54,108 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\system.tmp_save
+2019-12-05 16:01:54,140 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\MXTmpFiles\system.tmp
+2019-12-05 16:01:54,155 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_hal_conf.h_save
+2019-12-05 16:01:54,202 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\stm32l4xx_hal_conf.h
+2019-12-05 16:01:54,218 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\main.h_save
+2019-12-05 16:01:54,265 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Inc\main.h
+2019-12-05 16:01:54,265 [INFO] CodeEngine:193 - oldGeneratedFile, C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\main.c_save
+2019-12-05 16:01:54,327 [INFO] CodeEngine:211 - Generated code: C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\Core\Src\main.c
+2019-12-05 16:01:54,793 [INFO] ProjectBuilder:1645 - Time for Copy HAL[1] : 94mS.
+2019-12-05 16:01:54,793 [INFO] ProjectBuilder:2206 - Project Generator version: 3.5.2
+2019-12-05 16:01:55,027 [INFO] ConfigFileManager:953 - The Die is : DIE415
+2019-12-05 16:01:55,998 [INFO] ProjectBuilder:2373 - Time for Generating toolchain IDE Files: 1205mS.
+2019-12-05 16:01:55,998 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-12-05 16:01:55,998 [INFO] ProjectBuilder:1505 - Time for Copy CMSIS : 0mS.
+2019-12-05 16:02:01,218 [INFO] BlockDiagram:1827 - stop enableDisableButtons
