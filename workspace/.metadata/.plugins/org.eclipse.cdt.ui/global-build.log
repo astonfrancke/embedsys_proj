@@ -1,21 +1,1287 @@
-16:05:14 **** Incremental Build of configuration Debug for project Sensorkort ****
+13:11:49 **** Incremental Build of configuration Debug for project Sensorkort ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/sensors.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sensors.d" -MT"Core/Src/sensors.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sensors.o"
+../Core/Src/sensors.c: In function 'get_humi_temp':
+../Core/Src/sensors.c:57:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:62:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:73:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:78:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c: In function 'get_hts_cali':
+../Core/Src/sensors.c:107:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:108:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:113:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:114:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:122:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:123:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:129:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:130:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:139:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:140:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:147:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:148:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:158:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:159:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:166:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:167:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
 arm-none-eabi-gcc -o "Sensorkort.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Sensorkort.elf
  
 arm-none-eabi-objdump -h -S  Sensorkort.elf  > "Sensorkort.list"
 arm-none-eabi-size   Sensorkort.elf 
    text	   data	    bss	    dec	    hex	filename
-  29792	    120	   2240	  32152	   7d98	Sensorkort.elf
+  34164	    120	   2280	  36564	   8ed4	Sensorkort.elf
 Finished building: default.size.stdout
  
 Finished building: Sensorkort.list
  
-16:05:22 **** Incremental Build of configuration Debug for project Sensorkort ****
+13:11:55 **** Incremental Build of configuration Debug for project Sensorkort ****
 make -j8 all 
 arm-none-eabi-size   Sensorkort.elf 
    text	   data	    bss	    dec	    hex	filename
-  29792	    120	   2240	  32152	   7d98	Sensorkort.elf
+  34164	    120	   2280	  36564	   8ed4	Sensorkort.elf
 Finished building: default.size.stdout
+ 
+13:12:08 **** Incremental Build of configuration Debug for project Sensorkort ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34164	    120	   2280	  36564	   8ed4	Sensorkort.elf
+Finished building: default.size.stdout
+ 
+13:21:01 **** Incremental Build of configuration Debug for project Sensorkort ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/sensors.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sensors.d" -MT"Core/Src/sensors.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sensors.o"
+../Core/Src/sensors.c: In function 'get_humi_temp':
+../Core/Src/sensors.c:57:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:62:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:73:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:78:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c: In function 'get_hts_cali':
+../Core/Src/sensors.c:107:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:108:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:113:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:114:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:122:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:123:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:129:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:130:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:139:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:140:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:147:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:148:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:158:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:159:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:166:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:167:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c: In function 'init_hts':
+../Core/Src/sensors.c:195:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, config, 2, HAL_MAX_DELAY);
+                                                  ^~~~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:200:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, config, 2, HAL_MAX_DELAY);
+                                                  ^~~~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Sensorkort.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort.elf
+ 
+arm-none-eabi-objdump -h -S  Sensorkort.elf  > "Sensorkort.list"
+arm-none-eabi-size   Sensorkort.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34228	    120	   2280	  36628	   8f14	Sensorkort.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort.list
+ 
+13:24:41 **** Incremental Build of configuration Debug for project Sensorkort ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/sensors.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sensors.d" -MT"Core/Src/sensors.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sensors.o"
+../Core/Src/sensors.c: In function 'get_humi_temp':
+../Core/Src/sensors.c:57:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:62:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:73:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:78:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c: In function 'get_hts_cali':
+../Core/Src/sensors.c:107:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:108:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:113:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:114:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:122:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:123:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:129:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:130:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:139:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:140:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:147:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:148:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:158:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:159:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:166:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:167:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c: In function 'init_hts':
+../Core/Src/sensors.c:195:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, config, 2, HAL_MAX_DELAY);
+                                                  ^~~~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:200:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, config, 2, HAL_MAX_DELAY);
+                                                  ^~~~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Sensorkort.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort.elf
+ 
+arm-none-eabi-objdump -h -S  Sensorkort.elf  > "Sensorkort.list"
+arm-none-eabi-size   Sensorkort.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34236	    120	   2288	  36644	   8f24	Sensorkort.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort.list
+ 
+13:24:57 **** Incremental Build of configuration Debug for project Sensorkort ****
+make -j8 all 
+arm-none-eabi-size   Sensorkort.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34236	    120	   2288	  36644	   8f24	Sensorkort.elf
+Finished building: default.size.stdout
+ 
+13:26:10 **** Incremental Build of configuration Debug for project Sensorkort ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/sensors.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sensors.d" -MT"Core/Src/sensors.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sensors.o"
+../Core/Src/sensors.c: In function 'get_humi_temp':
+../Core/Src/sensors.c:57:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:62:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:73:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:78:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c: In function 'get_hts_cali':
+../Core/Src/sensors.c:107:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:108:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:113:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:114:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:122:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:123:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:129:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:130:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:139:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:140:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:147:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:148:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:150:23: error: initializer element is not constant
+  static int msbdata = data[0];
+                       ^~~~
+../Core/Src/sensors.c:158:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:159:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:166:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:167:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c: In function 'init_hts':
+../Core/Src/sensors.c:195:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, config, 2, HAL_MAX_DELAY);
+                                                  ^~~~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:202:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, config, 2, HAL_MAX_DELAY);
+                                                  ^~~~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:83: Core/Src/sensors.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:26:30 **** Incremental Build of configuration Debug for project Sensorkort ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/sensors.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L476xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sensors.d" -MT"Core/Src/sensors.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sensors.o"
+../Core/Src/sensors.c: In function 'get_humi_temp':
+../Core/Src/sensors.c:57:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:62:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:73:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  ret = HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                        ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:78:56: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+   ret = HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                        ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c: In function 'get_hts_cali':
+../Core/Src/sensors.c:107:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:108:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:113:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:114:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 1, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:122:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:123:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:129:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:130:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:139:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:140:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:147:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:148:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:158:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:159:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:166:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, reg, 1, HAL_MAX_DELAY);
+                                                  ^~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:167:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Receive' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Receive(&hi2c3, hts221.DevAddr, data, 2, HAL_MAX_DELAY);
+                                                 ^~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:602:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c: In function 'init_hts':
+../Core/Src/sensors.c:195:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, config, 2, HAL_MAX_DELAY);
+                                                  ^~~~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/sensors.c:202:50: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+  HAL_I2C_Master_Transmit(&hi2c3, hts221.DevAddr, config, 2, HAL_MAX_DELAY);
+                                                  ^~~~~~
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:314:0,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Inc/i2c.h:27,
+                 from ../Core/Src/sensors.c:10:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h:601:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Sensorkort.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\elfra\Documents\Skola\inbyggda_system\project\workspace\Sensorkort\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensorkort.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Sensorkort.elf
+ 
+arm-none-eabi-objdump -h -S  Sensorkort.elf  > "Sensorkort.list"
+arm-none-eabi-size   Sensorkort.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34248	    120	   2288	  36656	   8f30	Sensorkort.elf
+Finished building: default.size.stdout
+ 
+Finished building: Sensorkort.list
  

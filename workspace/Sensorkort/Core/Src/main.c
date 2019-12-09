@@ -74,7 +74,7 @@ extern void initialise_monitor_handles(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-#undef RUN_TEST_PROGRAM
+//#undef RUN_TEST_PROGRAM
   /* USER CODE END 1 */
   
 
@@ -105,7 +105,7 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 #ifdef RUN_TEST_PROGRAM
-  display_test_program();
+  sensors_test_program();
 #else
   alt1_program();
 #endif

@@ -1,0 +1,5 @@
+1575617940107	Move 'usb_com_test.c' to 'Src'
+1575617964426	Move 2 resources to 'Src'
+1575617984495	Move 3 resources to 'Inc'
+1575618738190	Rename resource 'hts.h'
+1575618775243	Rename resource 'hts.c'

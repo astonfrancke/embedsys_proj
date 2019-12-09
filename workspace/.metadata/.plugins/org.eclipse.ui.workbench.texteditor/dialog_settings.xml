@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="date_time_values"/>
+		<item key="selection" value="hts221."/>
 		<item key="wrap" value="true"/>
-		<item key="casesensitive" value="false"/>
+		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
-		<item key="isRegEx" value="false"/>
+		<item key="isRegEx" value="true"/>
 		<list key="findhistory">
+			<item value="const uint8_t "/>
+			<item value="const uint8_t"/>
+			<item value="H"/>
+			<item value="humi_temp"/>
 			<item value="arr"/>
 			<item value="FORMAT_BCD"/>
 			<item value="RTC_FORMAT_BCD"/>
@@ -17,6 +21,10 @@
 			<item value="lcd"/>
 		</list>
 		<list key="replacehistory">
+			<item value="hts221."/>
+			<item value="T"/>
+			<item value=""/>
+			<item value="buf"/>
 			<item value="date_time_values"/>
 			<item value="FORMAT_BIN"/>
 			<item value="RTC_FORMAT_BIN"/>
