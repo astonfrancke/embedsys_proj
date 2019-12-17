@@ -16,7 +16,7 @@
  * *****************************************************************************
  * @brief 	Turn on the backlight in a specific color.
  * @param 	uint8_t color, color of the light turned on.
- * 			0 = RED, 1 = GREEN, 2 = WHITE
+ * 			0 = GREEN, 1 = WHITE
  * @return 	void
  * *****************************************************************************
  */
@@ -34,7 +34,7 @@ void display_backlight(uint8_t color){
 /**
  * *****************************************************************************
  * @brief 	Sets the brightness of the backlight by reading from ADC. Only works
- * 			for backlight color red. This is used as the inititialization of the
+ * 			for backlight color red. This is used as the initialization of the
  * 			display backlight.
  * @return 	void
  * *****************************************************************************
@@ -45,7 +45,7 @@ void set_display_backlight_brightness(){
 }
 /**
  * *****************************************************************************
- * @brief 	Turn the lcd with specifig settings.
+ * @brief 	Turn the lcd on.
  * @return 	void
  * *****************************************************************************
  */

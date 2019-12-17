@@ -1,10 +1,10 @@
 /**
  ******************************************************************************
- * @file           : test_rtc.c
- * @brief          : test_rtc.c file.
- *                   This file tests the functions of the rtc.c file.
+ * @file           	: test_rtc.c
+ * @brief         	: test_rtc.c file.
+ *                    This file tests the functions of the rtc.c file.
  * @author			: Carl Aston Francke
- * @version		: 1.0
+ * @version			: 1.0
  * @date			: 28-November-2019
  ******************************************************************************
  */

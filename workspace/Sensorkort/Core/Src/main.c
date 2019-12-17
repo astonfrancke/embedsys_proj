@@ -30,7 +30,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "../../Tests/Inc/display_test.h"
+#include "../../Tests/Inc/rtc_test.h"
+#include "../../Tests/Inc/usb_com_test.h"
+#include "alt1_program.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -74,7 +77,7 @@ extern void initialise_monitor_handles(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-//#undef RUN_TEST_PROGRAM
+#undef RUN_TEST_PROGRAM
   /* USER CODE END 1 */
   
 
@@ -105,7 +108,7 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 #ifdef RUN_TEST_PROGRAM
-  sensors_test_program();
+  display_test_program();
 #else
   alt1_program();
 #endif

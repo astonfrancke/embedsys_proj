@@ -49,3 +49,16 @@ void test_usb_receive(void)
 	lcd_set_pos(LINE1);
 	lcd_write_string(rx_buffer);
 }
+
+/**
+ * *****************************************************************************
+ * @brief 	Tests usb_receive_time function in usb_com.c.
+ * @return 	void
+ * *****************************************************************************
+ */
+void test_usb_receive_time(void)
+{
+	uint8_t *rx_buffer = usb_receive_time();
+	lcd_set_pos(LINE1);
+	lcd_write_string(rx_buffer);
+}

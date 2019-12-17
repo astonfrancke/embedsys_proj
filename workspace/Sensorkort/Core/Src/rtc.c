@@ -145,6 +145,7 @@ void set_time(uint8_t * date_time){
 	RTC_TimeTypeDef sTime;
 	RTC_DateTypeDef sDate;
 
+	/* I don't really care about date, so we set everything to 1 */
 	sDate.Year = 0x01;
 	sDate.Month = 0x01;
 	sDate.Date = 0x01;
@@ -187,7 +188,7 @@ char * get_time(){
 	RTC_DateTypeDef gDate;
 
 	HAL_RTC_GetTime(&hrtc, &gTime, FORMAT_BIN);
-	HAL_RTC_GetDate(&hrtc, &gDate, FORMAT_BIN);
+	HAL_RTC_GetDate(&hrtc, &gDate, FORMAT_BIN); // We need to call GetDate as well in order to flush the shadow registers
 
 	sprintf((char*)time, "%02d:%02d:%02d", gTime.Hours, gTime.Minutes, gTime.Seconds);
 

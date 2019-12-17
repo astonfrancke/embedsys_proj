@@ -2,8 +2,7 @@
   ******************************************************************************
   * @file           : display.h
   * @brief          : Header for display.c file.
-  *                   This file contains the common defines of the display.
-  *                   functions.
+  *                   This file contains the common defines of the display functions.
   * @author			: Carl Aston Francke
   * @version		: 1.0
   * @date			: 28-November-2019

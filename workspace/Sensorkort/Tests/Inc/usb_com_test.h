@@ -2,8 +2,7 @@
   ******************************************************************************
   * @file           : usb_com_test.h
   * @brief          : Header for usb_com_test.c file.
-  *                   This file contains the common defines of the usb_com_test.c
-  *                   file.
+  *                   This file contains the common defines of the usb_com_test.c file.
   * @author			: Carl Aston Francke
   * @version		: 1.0
   * @date			: 28-November-2019

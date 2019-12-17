@@ -1,10 +1,10 @@
 /**
  ******************************************************************************
- * @file           : test_display.c
- * @brief          : test.c file.
- *                   This file tests the functions of the display.c file.
+ * @file           	: display_test.c
+ * @brief          	: display_test.c file.
+ *                    This file tests the functions of the display.c file.
  * @author			: Carl Aston Francke
- * @version		: 1.0
+ * @version			: 1.0
  * @date			: 27-November-2019
  ******************************************************************************
  */
@@ -20,7 +20,9 @@
 void display_test_program(void)
 {
 	test_lcd_init();
-	while(1) { test_backlight_brightness(); }
+	while(1) {
+		test_lcd_write();
+	}
 }
 
 

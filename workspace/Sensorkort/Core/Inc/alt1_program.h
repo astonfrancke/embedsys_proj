@@ -1,9 +1,13 @@
-/*
- * alt1_program.h
- *
- *  Created on: Dec 5, 2019
- *      Author: elfra
- */
+/**
+  ******************************************************************************
+  * @file           : alt1_program.h
+  * @brief          : Header for alt1_program.c file.
+  *                   This file contains the common defines of the alternative 1 program.
+  * @author			: Carl Aston Francke
+  * @version		: 1.0
+  * @date			: 28-November-2019
+  ******************************************************************************
+  */
 
 #ifndef INC_ALT1_PROGRAM_H_
 #define INC_ALT1_PROGRAM_H_
@@ -15,3 +19,5 @@
 #include "display.h"
 #include "usb_com.h"
 #include "rtc.h"
+
+void alt1_program();
